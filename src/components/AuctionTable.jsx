@@ -1,11 +1,11 @@
 import heart from '../assets/heart.png'
 // import heartFill from '../assets/heart-fill.png'
 
-const AuctionTable = ({ auctions }) => {
-  
+const AuctionTable = ({ auctions, handleFavorite }) => {
+
     return (
         <div className="w-4/6 font-sora ">
-           
+
             {/* table section  */}
             <table className="min-w-full bg-white rounded-2xl overflow-hidden shadow ">
                 <thead >
@@ -33,10 +33,10 @@ const AuctionTable = ({ auctions }) => {
                             <td className="p-4 font-medium">{item.timeLeft} days left</td>
                             <td className="p-4">
                                 <button
-                                  
+                                    onClick={() => handleFavorite(item)}
                                     className={`p-2 rounded-full cursor-pointer`}
                                 >
-                                   <img src={heart} alt="" srcset="" />
+                                    <img src={heart} alt=""  />
                                 </button>
                             </td>
                         </tr>

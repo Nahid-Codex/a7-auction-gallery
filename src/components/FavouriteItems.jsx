@@ -1,8 +1,9 @@
 import heart from '../assets/heart.png';
 import { IoMdClose } from "react-icons/io";
 
-
 const FavoriteItems = ({ favorites }) => {
+    // calculate total bids amount 
+    const total = favorites.reduce((sum, item) => sum + item.currentBidPrice, 0);
 
     return (
         <div className="w-2/6 bg-white py-4 rounded-lg shadow text-center font-sora ">
@@ -22,7 +23,7 @@ const FavoriteItems = ({ favorites }) => {
                     </p>
                 </div>
             ) : (
-                <ul className=" text-[#0E2954] ">
+                <ul className="text-[#0E2954]">
                     {favorites.map((item) => (
                         <li
                             key={item.id}
@@ -35,16 +36,15 @@ const FavoriteItems = ({ favorites }) => {
                                     className="w-24 h-24 object-cover rounded-sm"
                                 />
                                 <div>
-                                    <p className="text-base font-normal text-[#0E2954]  max-w-[160px]">
+                                    <p className="text-base font-normal text-[#0E2954] max-w-[160px]">
                                         {item.title}
                                     </p>
-                                    <p className="text-base font-normal  pt-1">
+                                    <p className="text-base font-normal pt-1">
                                         ${item.currentBidPrice.toLocaleString()} &nbsp; Bids: {item.bidsCount}
                                     </p>
                                 </div>
                             </div>
                             <button
-
                                 className="text-black hover:text-red-500 text-2xl font-bold pt-2 cursor-pointer"
                             >
                                 <IoMdClose />
@@ -56,7 +56,9 @@ const FavoriteItems = ({ favorites }) => {
 
             {/* Total Amount */}
             <div className="p-8 text-xl font-medium border-t border-[#DCE5F3]">
-                Total bids Amount: $0000
+                <p>
+                    Total bids Amount: ${favorites.length === 0 ? '0000' : total}
+                </p>
             </div>
         </div>
     );

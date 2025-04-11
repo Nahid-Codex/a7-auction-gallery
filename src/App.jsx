@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import "./index.css"
 import AuctionTable from "./components/AuctionTable";
 import FavoriteItems from "./components/FavouriteItems";
+import { toast, ToastContainer } from "react-toastify";
 
 
 
@@ -18,7 +19,17 @@ function App() {
       .then((data) => setAuctions(data));
   }, []);
 
-  console.log(auctions);
+  console.log(favorites);
+
+  const handleFavorite = (item) => {
+    setFavorites([...favorites, item]);
+    toast.success('item added to favorites!', {
+      position: "top-right",
+      autoClose: 1000,
+
+    });
+  };
+
 
   return (
     <div className="max-w-[1380px] mx-auto">
@@ -37,8 +48,8 @@ function App() {
         <div className="flex flex-col lg:flex-row gap-6 mt-8">
           <AuctionTable
             auctions={auctions}
-            favorites={favorites}
-            setFavorites={setFavorites}
+            handleFavorite={handleFavorite}
+
           />
 
           <FavoriteItems favorites={favorites} setFavorites={setFavorites} />
@@ -48,6 +59,7 @@ function App() {
 
 
       <Footer></Footer>
+      <ToastContainer />
 
     </div>
   )
