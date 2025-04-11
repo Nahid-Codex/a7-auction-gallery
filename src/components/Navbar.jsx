@@ -13,7 +13,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Menu Links */}
-                <ul className="flex font-poppins text-sm lg:text-xl lg:space-x-8 space-x-4 text[#000] ">
+                <ul className="flex font-poppins text-sm lg:text-xl lg:space-x-8 space-x-4 text-[#000] ">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Auctions</a></li>
                     <li><a href="#">Categories</a></li>

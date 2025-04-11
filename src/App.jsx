@@ -39,8 +39,8 @@ function App() {
       <Banner></Banner>
 
       <section className="p-2 sm:p-10 lg:p-20 xl:p-30 bg-[#EBF0F5]">
-        <div>
-          <h2 className="text-3xl font-bold">Active Auctions</h2>
+        <div className="font-sora">
+          <h2 className="text-3xl font-bold text-[#0E2954] ">Active Auctions</h2>
           <p className="text-lg text-[#000] font-normal mt-5">
             Discover and bid on extraordinary items
           </p>

@@ -69,7 +69,7 @@ const FavoriteItems = ({ favorites, setFavorites }) => {
             )}
 
             {/* Total Amount */}
-            <div className="p-8 text-xl font-medium border-t border-[#DCE5F3]">
+            <div className="p-8 text-xl font-medium border-t border-[#DCE5F3] text-[#000]">
                 <p>
                     Total bids Amount: ${favorites.length === 0 ? '0000' : total}
                 </p>
