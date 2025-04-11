@@ -1,9 +1,15 @@
 import heart from '../assets/heart.png';
 import { IoMdClose } from "react-icons/io";
 
-const FavoriteItems = ({ favorites }) => {
+const FavoriteItems = ({ favorites, setFavorites }) => {
     // calculate total bids amount 
     const total = favorites.reduce((sum, item) => sum + item.currentBidPrice, 0);
+
+    const deleteFavorite = (id) => {
+        const updatedFavorites = favorites.filter(item => item.id !== id);
+        setFavorites(updatedFavorites);
+    };
+
 
     return (
         <div className="w-2/6 bg-white py-4 rounded-lg shadow text-center font-sora ">
@@ -45,6 +51,7 @@ const FavoriteItems = ({ favorites }) => {
                                 </div>
                             </div>
                             <button
+                                onClick={() => deleteFavorite(item.id)}
                                 className="text-black hover:text-red-500 text-2xl font-bold pt-2 cursor-pointer"
                             >
                                 <IoMdClose />
