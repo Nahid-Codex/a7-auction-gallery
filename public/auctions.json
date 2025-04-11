@@ -6,60 +6,68 @@
     "currentBidPrice": "2,430",
     "timeLeft": "3",
     "bidsCount": 15,
-    "image": "https://i.ibb.co.com/60z8c8wg/Bid1-min.png"
+    "image": "https://i.ibb.co.com/LfJpLb7/1.png"
   },
+
+  
+
+
+
+
+
   {
     "id": 2,
-    "title": "Vintage Watch",
+    "title": "1965 Gibson SG Standard Electric Guitar",
     "description": "A classic luxury watch from the 1970s.",
     "currentBidPrice": "3,330",
     "timeLeft": "1",
     "bidsCount": 22,
-    "image": "https://i.ibb.co.com/jknDLbbc/Bid2-min.png"
+    "image": "https://i.ibb.co.com/S499T09Z/2.png"
   },
   {
     "id": 3,
-    "title": "Leather Jacket",
+    "title": "Original Apple Macintosh 128K (1984)",
     "description": "A stylish leather jacket for all seasons.",
     "currentBidPrice": "2,030",
     "timeLeft": "2",
     "bidsCount": 9,
-    "image": "https://i.ibb.co.com/zWrfjP75/Bid3-min.png"
+    "image": "https://i.ibb.co.com/d4ghKDZh/3.png"
   },
   {
     "id": 4,
-    "title": "Signed Football",
+    "title": "Rolex Submariner 16610",
     "description": "A football signed by a famous player.",
     "currentBidPrice": "2,500",
     "timeLeft": "5",
     "bidsCount": 30,
-    "image": "https://i.ibb.co.com/b5L7k7yG/Bid4-min.png"
+    "image": "https://i.ibb.co.com/KjZ8fdkd/4.png"
   },
   {
     "id": 5,
-    "title": "Modern Painting",
+    "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
     "description": "An abstract painting by a contemporary artist.",
     "currentBidPrice": "2,430",
     "timeLeft": "3",
     "bidsCount": 18,
-    "image": "https://i.ibb.co.com/MxpGvDrg/Bid5-min.png"
+    "image": "https://i.ibb.co.com/9kX5KfwC/5.png"
   },
   {
     "id": 6,
-    "title": "Rare Comic Book",
+    "title": "Mid-Century Modern Eames Lounge Chair",
     "description": "A limited edition comic book, perfect for collectors.",
     "currentBidPrice": "3,900",
     "timeLeft": "6",
     "bidsCount": 11,
-    "image": "https://i.ibb.co.com/9myHjwzM/Bid6-min.png"
+    "image": "https://i.ibb.co.com/ynkVgxw7/6.png"
   },
   {
     "id": 7,
-    "title": "Vintage Camera",
+    "title": "Banksy Original Screen Print",
     "description": "A classic camera from the 1950s, fully functional.",
     "currentBidPrice": "3,430",
     "timeLeft": "1",
     "bidsCount": 20,
-    "image": "https://i.ibb.co.com/jPcKm5TB/Bid7-min.png"
+    "image": "https://i.ibb.co.com/B5GyK231/7.png"
   }
 ]
+
