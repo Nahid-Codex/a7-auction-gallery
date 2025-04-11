@@ -1,5 +1,5 @@
 import heart from '../assets/heart.png'
-import heartFill from '../assets/heart-fill.png'
+// import heartFill from '../assets/heart-fill.png'
 
 const AuctionTable = ({ auctions }) => {
   

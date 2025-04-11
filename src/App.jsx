@@ -4,13 +4,13 @@ import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import "./index.css"
 import AuctionTable from "./components/AuctionTable";
-
+import FavoriteItems from "./components/FavouriteItems";
 
 
 
 function App() {
   const [auctions, setAuctions] = useState([]);
-
+  const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
     fetch("/auctions.json")
@@ -37,10 +37,11 @@ function App() {
         <div className="flex flex-col lg:flex-row gap-6 mt-8">
           <AuctionTable
             auctions={auctions}
-
+            favorites={favorites}
+            setFavorites={setFavorites}
           />
 
-
+          <FavoriteItems favorites={favorites} setFavorites={setFavorites} />
         </div>
       </main>
 
