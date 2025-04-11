@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify';
 import heart from '../assets/heart.png';
 import { IoMdClose } from "react-icons/io";
 
@@ -8,11 +9,16 @@ const FavoriteItems = ({ favorites, setFavorites }) => {
     const deleteFavorite = (id) => {
         const updatedFavorites = favorites.filter(item => item.id !== id);
         setFavorites(updatedFavorites);
+        toast.error('item removed from favorites!', {
+            position: "top-right",
+            autoClose: 1000,
+
+        });
     };
 
 
     return (
-        <div className="w-2/6 bg-white py-4 rounded-lg shadow text-center font-sora ">
+        <div className="w-full sm:w-2/6 bg-white py-4 rounded-lg shadow text-center font-sora ">
 
             {/* Header */}
             <div className="flex p-4 border-b border-[#DCE5F3] items-center justify-center gap-x-2 text-3xl font-medium text-[#0E2954] mb-2">
@@ -35,7 +41,7 @@ const FavoriteItems = ({ favorites, setFavorites }) => {
                             key={item.id}
                             className="flex p-6 items-start justify-between border-b border-[#DCE5F3]"
                         >
-                            <div className="flex items-start gap-3 text-left">
+                            <div className="flex flex-col lg:flex-row items-start gap-3 text-left">
                                 <img
                                     src={item.image}
                                     alt={item.title}
@@ -50,9 +56,10 @@ const FavoriteItems = ({ favorites, setFavorites }) => {
                                     </p>
                                 </div>
                             </div>
+
                             <button
                                 onClick={() => deleteFavorite(item.id)}
-                                className="text-black hover:text-red-500 text-2xl font-bold pt-2 cursor-pointer"
+                                className="text-black hover:text-red-500  text-2xl font-bold pt-2 cursor-pointer"
                             >
                                 <IoMdClose />
                             </button>

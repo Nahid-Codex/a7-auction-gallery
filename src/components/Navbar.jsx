@@ -5,15 +5,15 @@ import notification from "../assets/notification.png"
 
 const Navbar = () => {
     return (
-        <nav className="bg-white shadow-md px-30">
-            <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <nav className="bg-white shadow-md px-2 sm:px-10 lg:px-20 xl:px-30">
+            <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-5 md:gap-0">
                 {/* Logo */}
-                <div className="w-56 cursor-pointer">
-                    <img src={logo} alt=""  />
+                <div className=" w-36 lg:w-56 cursor-pointer">
+                    <img src={logo} alt="" />
                 </div>
 
                 {/* Menu Links */}
-                <ul className="hidden md:flex font-poppins space-x-8 text[#000] ">
+                <ul className="flex font-poppins text-sm lg:text-xl lg:space-x-8 space-x-4 text[#000] ">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Auctions</a></li>
                     <li><a href="#">Categories</a></li>

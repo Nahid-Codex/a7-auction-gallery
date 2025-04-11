@@ -3,7 +3,7 @@ import heartFill from '../assets/heart-fill.png';
 
 const AuctionTable = ({ auctions, handleFavorite, favorites }) => {
     return (
-        <div className="w-4/6 font-sora">
+        <div className=" w-full sm:w-4/6 font-sora">
             <table className="min-w-full bg-white rounded-2xl overflow-hidden shadow">
                 <thead>
                     <tr className="text-[#000] font-normal text-lg text-left">
@@ -35,9 +35,8 @@ const AuctionTable = ({ auctions, handleFavorite, favorites }) => {
                                     <button
                                         onClick={() => !isFavorited && handleFavorite(item)}
                                         disabled={isFavorited}
-                                        className={`p-2 rounded-full ${
-                                            isFavorited ? ' cursor-not-allowed' : 'cursor-pointer'
-                                        }`}
+                                        className={`p-2 rounded-full ${isFavorited ? ' cursor-not-allowed' : 'cursor-pointer'
+                                            }`}
                                     >
                                         <img src={isFavorited ? heartFill : heart} alt="favorite icon" />
                                     </button>

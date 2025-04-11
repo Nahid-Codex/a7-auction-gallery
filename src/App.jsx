@@ -38,14 +38,14 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
 
-      <main className="p-30 bg-[#EBF0F5]">
+      <section className="p-2 sm:p-10 lg:p-20 xl:p-30 bg-[#EBF0F5]">
         <div>
           <h2 className="text-3xl font-bold">Active Auctions</h2>
           <p className="text-lg text-[#000] font-normal mt-5">
             Discover and bid on extraordinary items
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row gap-6 mt-8">
+        <div className="flex flex-col items-center sm:items-start sm:flex-row gap-6 mt-8">
           <AuctionTable
             auctions={auctions}
             handleFavorite={handleFavorite}
@@ -55,9 +55,7 @@ function App() {
 
           <FavoriteItems favorites={favorites} setFavorites={setFavorites} />
         </div>
-      </main>
-
-
+      </section >
 
       <Footer></Footer>
       <ToastContainer />
