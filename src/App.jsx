@@ -49,6 +49,7 @@ function App() {
           <AuctionTable
             auctions={auctions}
             handleFavorite={handleFavorite}
+            favorites={favorites}
 
           />
 
