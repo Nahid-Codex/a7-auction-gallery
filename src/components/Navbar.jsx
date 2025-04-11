@@ -5,11 +5,11 @@ import notification from "../assets/notification.png"
 
 const Navbar = () => {
     return (
-        <nav className="bg-white shadow-md">
+        <nav className="bg-white shadow-md px-30">
             <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
                 {/* Logo */}
                 <div className="w-56 cursor-pointer">
-                    <img src={logo} alt="" srcset="" />
+                    <img src={logo} alt=""  />
                 </div>
 
                 {/* Menu Links */}
